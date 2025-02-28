@@ -27,7 +27,8 @@ const config: HardhatUserConfig = {
   etherscan: {
     apiKey: {
       // Is not required by blockscout. Can be any non-empty string
-      'flow': "abc"
+      'flow': "abc",
+      'flowTestnet': "abc"
     },
     customChains: [
       {
@@ -36,6 +37,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://evm.flowscan.io/api",
           browserURL: "https://evm.flowscan.io/",
+        }
+      },
+      {
+        network: "flowTestnet",
+        chainId: 545,
+        urls: {
+          apiURL: "https://testnet-evm.flowscan.io/api",
+          browserURL: "https://testnet-evm.flowscan.io/",
         }
       }
     ]
