@@ -43,8 +43,8 @@ const config: HardhatUserConfig = {
         network: "flowTestnet",
         chainId: 545,
         urls: {
-          apiURL: "https://testnet-evm.flowscan.io/api",
-          browserURL: "https://testnet-evm.flowscan.io/",
+          apiURL: "https://evm-testnet.flowscan.io/api",
+          browserURL: "https://evm-testnet.flowscan.io/",
         }
       }
     ]
